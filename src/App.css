@@ -31,6 +31,51 @@ div.design {
   position: relative;
 }
 
+/*Cards */
+.card {
+  width: 275px;
+  height: 200px;
+  padding: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  color: white;
+}
+.card.back {
+  background-image: url("./interactive-card-details-form-main/images/bg-card-back.png");
+  top: 20px;
+  right: 10px;
+}
+.card.back .cvcValue {
+  position: absolute;
+  right: 32px;
+  top: 62px;
+}
+.card.front {
+  background-image: url("./interactive-card-details-form-main/images/bg-card-front.png");
+  top: 100px;
+  left: 10px;
+  text-transform: uppercase;
+}
+.card.front img {
+  width: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+.card.front .card-number-value {
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.card.front .card-data {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
 .container {
   background-color: rgb(252, 252, 252);
   display: flex;

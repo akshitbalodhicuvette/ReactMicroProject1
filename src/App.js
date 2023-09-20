@@ -1,5 +1,7 @@
 import "./App.css";
 import CardForm from "./components/CardForm";
+import CardBack from "./components/CardBack";
+import CardFront from "./components/CardFront";
 import { useState } from "react";
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
   return (
     <div className="App">
       <div className="flex">
-        <div className="design"></div>
+        <div className="design">
+          <CardBack cvc={formData.cvc} />
+          <CardFront {...formData} />
+        </div>
         <div className="container">
           {!validSubmit ? (
             <CardForm
