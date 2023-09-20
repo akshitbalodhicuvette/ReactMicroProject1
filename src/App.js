@@ -1,8 +1,9 @@
 import "./App.css";
-import CardForm from "./components/CardForm";
 import CardBack from "./components/CardBack";
 import CardFront from "./components/CardFront";
+import CardForm from "./components/CardForm";
 import { useState } from "react";
+import CompletePage from "./components/CompletePage";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -30,7 +31,10 @@ function App() {
               setValidSubmit={setValidSubmit}
             />
           ) : (
-            <div />
+            <CompletePage
+              setFormData={setFormData}
+              setValidSubmit={setValidSubmit}
+            />
           )}
         </div>
       </div>
